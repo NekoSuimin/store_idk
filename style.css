@@ -5,68 +5,10 @@
 body {
     font-family: 'Lato', sans-serif;
 }
-.header {
-    height: 100px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
-    border: solid 1px #ececec;
-    background-color: #ffffff;
-}
-.header__content {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.header__left {
-    display: flex;
-    align-items: center;
-}
+
 .container {
     width: 1140px;
     margin: 0 auto;
-}
-.logo {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-.logo p {
-    font-size: 27px;
-    font-weight: 300;
-    letter-spacing: 0.68px;
-    text-align: center;
-    color: #222222;
-}
-.logo p span {
-    font-weight: 900;
-    color: #f16d7f;
-}
-.form {
-    display: flex;
-    align-items: center;
-    margin-left: 37px;
-}
-.form_browse {
-    text-align: center;
-    width: 87px;
-    height: 39px;
-    border: solid 1px #e6e6e6;
-    background-image: linear-gradient(to top, #f9f9f9, #f5f5f5);
-    font-size: 14px;
-    font-weight: 300;
-    color: #222222;
-}
-.form__input {
-    width: 317px;
-    height: 37px;
-    border: solid 1px #e6e6e6;
-    background-color: #ffffff;
-}
-.form__search{
-    width: 36px;
-    height: 39px;
-    border: solid 1px #e6e6e6;
-    background-color: #ffffff;
 }
 .drop {
     border-radius: 5px;
@@ -112,13 +54,26 @@ body {
 .drop:before {
   content: '';
   display: block;
-  width: 12px;
-  height: 12px;
-  background-color: #ccc;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
   position: absolute;
   top: -6px;
   left: 31px;
+  transform: rotate(45deg);
+  border-top: 1px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
 } 
+.drop_right {
+  right: 0px
+} 
+
+.drop_right:before {
+  left: auto !important;
+  right: 10px;
+
+} 
+
 .menu__list:hover .drop{
     display: flex;
 } 
