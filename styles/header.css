@@ -58,3 +58,24 @@
     border: solid 1px #e6e6e6;
     background-color: #ffffff;
 }
+
+.header__right {
+    display: flex;
+    align-items: center;
+} 
+.logo__img {
+    margin-right: 13px;
+}
+.cart{
+    margin-right: 26px;
+}
+.my__acc {
+    text-decoration: none;
+    font-size: 15px;
+    text-align: right;
+    color: #ffffff;
+    text-align:center;
+    width: 130px;
+    height: 38px;
+    background-color: #f16d7f;
+}
