@@ -21,20 +21,19 @@ body {
 .header__content {
   height: 100%;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
 }
-.header__left {
+.header__left, .header__right {
   display: flex;
-  align-items: center;
-}
-.header__right {
-  display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .logo {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   text-decoration: none;
 }
@@ -52,6 +51,7 @@ body {
 
 .form {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-left: 37px;
 }
@@ -86,14 +86,17 @@ body {
   margin-right: 26px;
 }
 
-.my__acc {
-  text-decoration: none;
-  font-size: 14px;
+.my_acc {
+  font-family: sans-serif;
   color: #ffffff;
-  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: #f16d7f;
+  display: block;
   width: 130px;
   height: 38px;
-  background-color: #f16d7f;
 }
 
 .drop {
@@ -159,14 +162,17 @@ body {
 .menu {
   list-style: none;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 .menu__list {
   position: relative;
 }
 .menu__list:hover .drop {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .menu__link {
   padding: 20px;
@@ -199,8 +205,9 @@ body {
 .products__content {
   padding-top: 63px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 .products__item {
   position: relative;
@@ -218,6 +225,8 @@ body {
 .products__text p {
   margin-top: 16px;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
   color: #f16d7f;
 }
@@ -301,6 +310,8 @@ body {
   padding-top: 100px;
   padding-bottom: 100px;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
 }
 .offer__content div:first-child {
@@ -336,6 +347,8 @@ body {
   margin-top: 132px !important;
   position: relative;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .features__text {
   position: absolute;
@@ -365,6 +378,8 @@ body {
 }
 .features__point {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   margin-left: 37px;
   justify-content: space-between;
   margin-top: 61px;

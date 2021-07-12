@@ -4,9 +4,8 @@
 //@import './styles/features.sass'
 //@import './styles/promo.sass'
 //@import './styles/footer.sass'
-
-$color-pink: #f16d7f
-$default-font-size: 14px
+@import "vars"
+@import "mixins"
 
 *
   margin: 0
@@ -25,28 +24,21 @@ body
   height: 100px
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17)
   border: solid 1px #ececec
-  background-color: #ffffff
+  background-color: $color-white
 
 
   &__content
     height: 100%
-    display: flex
+    +flex
     justify-content: space-between
-    align-items: center
 
 
-  &__left
-    display: flex
-    align-items: center
-
-  &__right
-    display: flex
-    align-items: center
+  &__left, &__right
+    +flex
 
 
 .logo
-  display: flex
-  align-items: center
+  +flex
   text-decoration: none
 
   p
@@ -61,8 +53,7 @@ body
       color: $color-pink
 
 .form
-  display: flex
-  align-items: center
+  +flex
   margin-left: 37px
 
 
@@ -81,14 +72,14 @@ body
     width: 317px
     height: 37px
     border: solid 1px #e6e6e6
-    background-color: #ffffff
+    background-color: $color-white
 
 
   &__search
     width: 36px
     height: 39px
     border: solid 1px #e6e6e6
-    background-color: #ffffff
+    background-color: $color-white
 
 
 .logo__img
@@ -98,18 +89,16 @@ body
 .cart
   margin-right: 26px
 
-.my__acc
-  text-decoration: none
-  font-size: $default-font-size
-  color: #ffffff
-  text-align: center
+.my_acc
+  +font($color-white, $default-font-size)
+  background-color: $color-pink
+  display: block
   width: 130px
   height: 38px
-  background-color: $color-pink
 
 .drop
   border-radius: 5px
-  background-color: #ffffff
+  background-color: $color-white
   border: 1px solid #ececec
   padding: 20px
   margin-right: 46px
@@ -169,16 +158,15 @@ body
 
 .menu
   list-style: none
-  display: flex
+  +flex
   justify-content: center
-  align-items: center
 
 
   &__list
     position: relative
     &:hover
       .drop
-        display: flex
+        +flex
 
 
   &__link
@@ -195,7 +183,6 @@ body
 
   &__link:hover
     color: $color-pink
-
 
 
 .products
@@ -216,9 +203,8 @@ body
 
   &__content
     padding-top: 63px
-    display: flex
+    +flex
     justify-content: space-between
-    flex-wrap: wrap
 
 
   &__item
@@ -237,7 +223,7 @@ body
 
     p
       margin-top: 16px
-      display: flex
+      +flex
       justify-content: space-between
       color: $color-pink
 
@@ -278,7 +264,7 @@ body
     width: 212px
     height: 48px
     background-color: $color-pink
-    color: #ffffff
+    color: $color-white
     font-size: $default-font-size + 2px
     font-weight: bold
     line-height: 54px
@@ -295,10 +281,11 @@ body
     font-size: 13px
     text-align: center
     line-height: 39px
-    color: #ffffff
+    color: $color-white
     width: 123px
     height: 39px
-    border: solid 1px #ffffff
+    border: solid 1px $color-white
+
 
 .promo
   height: 614px
@@ -328,7 +315,7 @@ body
 .offer
   padding-top: 100px
   padding-bottom: 100px
-  display: flex
+  +flex
   justify-content: space-between
 
 
@@ -363,13 +350,12 @@ body
 
 
 .features
-
   &__offer
     background-color: #222224
     height: 529px
     margin-top: 132px !important
     position: relative
-    display: flex
+    +flex
 
 
   &__text
@@ -382,7 +368,7 @@ body
     font-weight: bold
     letter-spacing: 0.8px
     text-align: left
-    color: #ffffff
+    color: $color-white
     font-size: 32px
 
 
@@ -406,7 +392,7 @@ body
 
 
   &__point
-    display: flex
+    +flex
     margin-left: 37px
     justify-content: space-between
     margin-top: 61px
