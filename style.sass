@@ -11,6 +11,10 @@
   margin: 0
   padding: 0
 
+*:focus
+  outline: none
+
+
 
 body
   font-family: 'Lato', sans-serif
@@ -166,7 +170,7 @@ body
     position: relative
     &:hover
       .drop
-        +flex
+        display: flex
 
 
   &__link
@@ -351,9 +355,9 @@ body
 
 .features
   &__offer
-    background-color: #222224
+    background-color: $color-black
     height: 529px
-    margin-top: 132px !important
+    margin-top: $default-margin !important
     position: relative
     +flex
 
@@ -382,34 +386,38 @@ body
 
 
   &__img
-    filter: brightness(50%)
+    filter: brightness(75%)
 
 
-  &_points
+  &__points
     display: flex
     flex-direction: column
-    margin-left: 36px
+    justify-content: space-between
 
 
   &__point
-    +flex
+    display: flex
     margin-left: 37px
     justify-content: space-between
-    margin-top: 61px
+
+  &__point:not(:first-child)
+    padding-top: 61px
 
 
   &__logo
     width: auto
     height: 35px
+    padding-bottom: 50px
 
 
   &__desc
     margin-left: 33px
-    font-size: $default-font-size
+    font-size: $default-font-size - 2px
     font-weight: 300
     letter-spacing: 0.35px
     color: #fbfbfb
     width: 219px
+
 
 
   &__header
@@ -419,6 +427,168 @@ body
     margin-bottom: 21px
 
 .subscribe
-  margin-top: 97px
+  margin-top: $default-margin
   height: 438px
-  filter: grayscale(50%)
+
+  &__pic
+    filter: opacity(50%)
+    position: absolute
+
+  &__container
+    display: flex
+    justify-content: space-between
+    position: relative
+    top: 101px
+
+  &__quote
+    width: 386px + 28px + 83px
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+
+  &__desc
+    margin-left: 28px
+
+  &__text
+    &__italic
+      font-size: $default-font-size + 2px
+      font-style: italic
+      line-height: 1.63
+      letter-spacing: 0.4px
+      color: $color-black
+
+    &__bold
+      font-size: $default-font-size + 2px
+      font-weight: bold
+      line-height: 1.63
+      letter-spacing: 0.4px
+      color: $color-pink
+    &__small
+      font-size: $default-font-size - 2px
+      line-height: 1.17
+      letter-spacing: 0.3px
+      color: $color-black
+
+  &__indicate
+    margin-top: 41px
+    width: 140px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+  &__email
+    text-align: center
+    text-transform: uppercase
+
+    &__text
+      h3
+        font-size: 24px
+        line-height: 54px
+        letter-spacing: 0.6px
+
+      p
+        font-size: $default-font-size
+        line-height: 24px
+        letter-spacing: 0.35px
+        color: $color-black
+    &__form
+      display: flex
+
+    &__input
+      width: 282px
+      height: 46px
+      border-radius: 23px 0 0 23px
+      border: none
+      background-color: #e1e1e1
+      text-indent: 28px
+      font-size: $default-font-size
+      line-height: 54px
+      letter-spacing: 0.35px
+      color: rgba(34, 34, 36, 0.67)
+    &__button
+      border: none
+      width: 104px
+      height: 45.5px
+      border-radius: 0 23px 23px 0
+      background-color: $color-pink
+      font-size: $default-font-size
+      letter-spacing: 0.35px
+      color: $color-white
+
+
+.about
+  margin-top: $default-margin
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+
+  &__desc
+    width: 427px
+
+  &__text
+      font-size: $default-font-size
+      line-height: 1.71
+      letter-spacing: 0.35px
+      color: $color-gray
+  &__links
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    align-items: center
+    width: 230px + 294px
+
+  &__header_link
+    font-size: $default-font-size + 4px
+    font-weight: bold
+    line-height: 1.44
+    letter-spacing: 0.45px
+    color: $color-pink
+    text-decoration: none
+    text-transform: uppercase
+
+  &__link
+    font-size: $default-font-size + 2px
+    line-height: 2.63
+    letter-spacing: 0.4px
+    color: $color-gray
+    text-decoration: none
+
+  &__link:hover
+    color: $color-pink
+
+.footer
+  background-color: #e6e6e6
+  margin-top: $default-margin
+
+  &__flex
+    height: 79px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__copy
+    font-size: $default-font-size + 2px
+    line-height: 2.63
+    letter-spacing: 0.4px
+    color: #7a7a7a
+
+  &__button
+    display: inline-block
+    width: 32px
+    height: 32px
+    background-color: #ffffff
+
+  &__button:hover
+    background-color: $color-pink
+
+
+.rect
+  width: 38px
+  height: 4px
+  border-radius: 10%
+  background-color: #d6d6d6
+  &__active
+    background-color: $color_pink
+
+.rect:hover
+  background-color: $color_pink
