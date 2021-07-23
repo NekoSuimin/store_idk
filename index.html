@@ -9,6 +9,7 @@
   <link href="./style.css" rel="stylesheet">
   <link href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/1a6b01e537.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <header class="header">
@@ -19,14 +20,74 @@
         <p>BRAN<span>D</span></p>
       </a>
       <form action="" class="form">
-        <button class="form_browse">Browse</button>
+        <a href="#" class="form_browse">Browse <i class="fas fa-caret-down"></i></i></a>
+        <div class="drop__browse">
+          <div class="drop__browse__flex">
+            <h3 class="drop__h3">Women</h3>
+            <ul class="drop__menu">
+              <li><a class="drop__link" href="#">Dresses</a></li>
+              <li><a class="drop__link" href="#">Tops</a></li>
+              <li><a class="drop__link" href="#">Sweaters/Knits</a></li>
+              <li><a class="drop__link" href="#">Jackets/Coats</a></li>
+              <li><a class="drop__link" href="#">Blazers</a></li>
+              <li><a class="drop__link" href="#">Denim</a></li>
+              <li><a class="drop__link" href="#">Leggings/Pants</a></li>
+              <li><a class="drop__link" href="#">Skirts/Shorts</a></li>
+              <li><a class="drop__link" href="#">Accessories</a></li>
+            </ul>
+          </div>
+          <div class="drop__flex">
+            <h3 class="drop__h3">Men</h3>
+            <ul class="drop__menu">
+              <li><a class="drop__link" href="#">Tees/Tank tops</a></li>
+              <li><a class="drop__link" href="#">Shirts/Polos</a></li>
+              <li><a class="drop__link" href="#">Sweaters</a></li>
+              <li><a class="drop__link" href="#">Sweatshirts/Hoodies</a></li>
+              <li><a class="drop__link" href="#">Blazers</a></li>
+              <li><a class="drop__link" href="#">Jackets/vests</a></li>
+            </ul>
+          </div>
+        </div>
         <input class="form__input" placeholder="Search for item..." type="text">
-        <button class="form__search">&#128270;</button>
+        <button class="form__search"><i class="fas fa-search"></i></button>
       </form>
     </div>
     <div class="header__right">
-      <img alt="cart" class='cart' src="img/cart.svg">
-      <a class="my_acc" href="#">My account </a>
+        <a href="#">
+        <img alt="cart" class='cart' src="img/cart.svg">
+      </a>
+      <div class="cart__drop">
+        <div class="cart__drop_items">
+          <div class="cart__drop_item">
+            <div class="cart__drop__description">
+              <img src="img/rebox.png" alt="ite, icon">
+              <div class="cart__drop__description_text">
+                <h4>Rebox Zane</h4>
+                <img src="img/star.png" alt="item rating" class="cart__star">
+                <p class="cart__text">1  x  $250</p>
+              </div>
+            </div>
+            <button class="cart__delete"><i class="fas fa-times-circle"></i></button>
+          </div>
+          <div class="cart__drop_item">
+            <div class="cart__drop__description">
+              <img src="img/rebox.png" alt="ite, icon">
+              <div class="cart__drop__description_text">
+              <h4>Rebox Zane</h4>
+                <img src="img/star.png" alt="item rating" class="cart__star">
+                <p class="cart__text">1  x  $250</p>
+              </div>
+            </div>
+            <button class="cart__delete"><i class="fas fa-times-circle"></i></button>
+          </div>
+        </div>
+        <div class="cart__drop_total">
+          <h3>TOTAL $500.00</h3>
+          <a href="#" class="cart__drop_total__checkout">Checkout</a>
+          <a href="#" class="cart__drop_total__goto">Go to cart</a>
+        </div>
+      </div>
+      <a class="my_acc" href="#">My account <i class="fas fa-caret-down"></i></i></a>
     </div>
   </div>
 </header>
@@ -369,11 +430,11 @@
         <p>© 2021  Brand  All Rights Reserved.</p>
       </div>
       <div class="footer__buttons">
-        <a href="#" class="footer__button"></a>
-        <a href="#" class="footer__button"></a>
-        <a href="#" class="footer__button disabled"></a>
-        <a href="#" class="footer__button"></a>
-        <a href="#" class="footer__button"></a>
+        <a href="#" class="footer__button"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="footer__button"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="footer__button disabled"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="footer__button"><i class="fab fa-pinterest-p"></i></a>
+        <a href="#" class="footer__button"><i class="fab fa-google-plus-g"></i></a>
       </div>
     </div>
   </footer>
