@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <title>sam sht idk</title>
-  <meta content="" name="description">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="./style.css" rel="stylesheet">
   <link href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/1a6b01e537.js" crossorigin="anonymous"></script>
+  <title>Product</title>
 </head>
 <body>
   <header class="header">
@@ -48,12 +48,12 @@
               </ul>
             </div>
           </div>
-          <input class="form__input" placeholder="Search for item..." type="text">
-          <button class="form__search"><i class="fas fa-search"></i></button>
+          <input id="form__input" class="form__input" placeholder="Search for item..." type="text">
+          <label for="form__input"><button class="form__search"><i class="fas fa-search"></i></button></label>
         </form>
       </div>
       <div class="header__right">
-          <a href="#">
+        <a href="#">
           <img alt="cart" class='cart' src="img/cart.svg">
         </a>
         <div class="cart__drop">
@@ -73,7 +73,7 @@
               <div class="cart__drop__description">
                 <img src="img/rebox.png" alt="ite, icon">
                 <div class="cart__drop__description_text">
-                <h4>Rebox Zane</h4>
+                  <h4>Rebox Zane</h4>
                   <img src="img/star.png" alt="item rating" class="cart__star">
                   <p class="cart__text">1  x  $250</p>
                 </div>
@@ -180,49 +180,97 @@
       </li>
     </ul>
   </nav>
-  <section class="promo">
-    <div class="container promo__content">
-      <div class="promo__text">
-        <p class='promo__text_big'>THE BRAND</p>
-        <p>OF LUXERIOUS <span style="color: #f16d7f;">FASHION</span></p>
+  <section class="arrivals">
+    <div class="arrivals__container">
+      <div class="arrivals__text">
+        <h3 class="arrivals__header">
+          New Arrivals
+        </h3>
+      </div>
+      <div class="arrivals__text">
+        <p>
+          <a href="#" class="arrivals__links">Home /</a>
+          <a href="#" class="arrivals__links">Men /</a>
+          <a href="#" class="arrivals__links arrivals__colored">New Arrivals</a>
+        </p>
       </div>
     </div>
   </section>
-  <section class="offer container">
-    <div class="offer__content">
-      <div class="offer__content_big" style="background-image: url(img/man.png);">
-        <div class="offer__text">
-          <p>hot deal</p>
-          <p><span>for men</span></p>
-        </div>
+  <section class="product">
+      <div class="product__photos">
+        <button class="product__photos__button"><i class="fas fa-chevron-left"></i></button>
+        <img src="img/woman_shirt.png" alt="Product image" class="product__img">
+        <button class="product__photos__button"><i class="fas fa-chevron-right"></i></button>
       </div>
-      <div class="offer__content_mini" style='background-image: url(img/acc.png); background-position: 0 -15px;'>
-        <div class="offer__text">
-          <p>LUXIROUS & trendy</p>
-          <p><span>ACCESORIES</span></p>
+      <div class="product__details">
+        <div class="product__details__container">
+          <div class="product__details__header">
+            <h4 class="product__details__h4 colored">WOMEN COLLECTION</h4>
+            <br>
+            <div class="product__selector">
+              <div class="product__select"></div>
+              <div class="product__select product__select_active"></div>
+              <div class="product__select"></div>
+            </div>
+            <br>
+            <h3 class="product__details__h3">Moschino Cheap And Chic</h3>
+            <br>
+            <p class="product__details__text">
+              Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.
+            </p>
+            <br>
+            <div class="product__details__material">
+              <div class="product__details__text">
+                MATERIAL: <span>COTTON</span>
+              </div>
+              <div class="product__details__text">
+                DESIGNER: <span>BINBURHAN</span>
+              </div>
+            </div>
+            <br>
+            <h3 class="product__details__price">$561</h3>
+          </div>
         </div>
+        <form class="product__details__form">
+          <div class="product__details__params">
+            <div>
+              <label for="color" class="product__details__label">CHOOSE COLOR</label><br>
+              <br>
+              <select id="color" class="product__details__input">
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+              </select>
+            </div>
+            <div>
+              <label for="size" class="product__details__label">CHOOSE SIZE</label><br>
+              <br>
+              <select id="size" class="product__details__input">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+            </div>
+            <div>
+              <label for="quantity" class="product__details__label">quantity</label><br>
+              <br>
+              <input id="quantity" type="text" placeholder="2" class="product__details__input">
+            </div>
+          </div>
+          <button class="product__details__add">
+            <div class="product__details__button_text">
+              <img src="img/small_cart.svg" alt="Button cart" class="product__details__cart">
+              <div>Add to Cart</div>
+            </div>
+          </button>
+        </form>
       </div>
-    </div>
-    <div class="offer__content">
-      <div class="offer__content_mini" style="background-image: url(img/woman.png);">
-        <div class="offer__text">
-          <p>30% offer</p>
-          <p><span>women</span></p>
-        </div>
-      </div>
-      <div class="offer__content_big" style="background-image: url(img/kid.png);">
-        <div class="offer__text">
-          <p>new arrivals</p>
-          <p><span>FOR kids</span></p>
-        </div>
-      </div>
-    </div>
   </section>
-  <section class="products container">
-    <div class="products__header">
-      <h3>Fetured Items</h3>
-      <p>Shop for items based on what we featured in this week</p>
-    </div>
+  <section class="suggestions container">
+    <h3 class="suggestions__header">You may like also</h3>
+    <br>
     <div class="products__content">
       <div class="products__item">
         <a class="products__img" href="#">
@@ -264,86 +312,8 @@
         </div>
         <a class="products__add" href="#">Add to cart</a>
       </div>
-      <div class="products__item">
-        <a class="products__img" href="#">
-          <img alt="product" src="img/shirt.png">
-        </a>
-        <div class="products__text">
-          <a>Mango People T-shirt</a>
-          <p>$52.00<img alt="star" class="products__star" src="img/star.png"></p>
-        </div>
-        <a class="products__add" href="#">Add to cart</a>
-      </div>
-      <div class="products__item">
-        <a class="products__img" href="#">
-          <img alt="product" src="img/shirt.png">
-        </a>
-        <div class="products__text">
-          <a>Mango People T-shirt</a>
-          <p>$52.00<img alt="star" class="products__star" src="img/star.png"></p>
-        </div>
-        <a class="products__add" href="#">Add to cart</a>
-      </div>
-      <div class="products__item">
-        <a class="products__img" href="#">
-          <img alt="product" src="img/shirt.png">
-        </a>
-        <div class="products__text">
-          <a>Mango People T-shirt</a>
-          <p>$52.00<img alt="star" class="products__star" src="img/star.png"></p>
-        </div>
-        <a class="products__add" href="#">Add to cart</a>
-      </div>
-      <div class="products__item">
-        <a class="products__img" href="#">
-          <img alt="product" src="img/shirt.png">
-        </a>
-        <div class="products__text">
-          <a>Mango People T-shirt</a>
-          <p>$52.00<img alt="star" class="products__star" src="img/star.png"></p>
-        </div>
-        <a class="products__add" href="#">Add to cart</a>
-      </div>
     </div>
-    <a class="products__button" href="#">Browse All Product→</a>
-  </section>
-  <section class="container features__offer">
-    <div class="features__pic">
-      <img alt="woman_offer" class="features__img" src="./img/women_offer.jpg">
-      <div class="features__text">
-        <p class="features__small">30% <span>OFFER</span></p>
-        <p class="features__small big">FOR WOMEN</p>
-      </div>
-    </div>
-    <div class="features__points">
-      <div class="features__point">
-        <img alt="features__logo" class="features__logo" src="./img/car.png">
-        <div class="features__desc">
-          <h3 class="features__header">Free Delivery</h3>
-          <p>
-            Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
-          </p>
-        </div>
-      </div>
-      <div class="features__point">
-        <img alt="features__logo" class="features__logo" src="./img/discount.png">
-        <div class="features__desc">
-          <h3 class="features__header">Sales & discounts</h3>
-          <p>
-            Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
-          </p>
-        </div>
-      </div>
-      <div class="features__point">
-        <img alt="features__logo" class="features__logo" src="./img/crown.png">
-        <div class="features__desc">
-          <h3 class="features__header">Quality assurance</h3>
-          <p>
-            Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
-          </p>
-        </div>
-      </div>
-    </div>
+
   </section>
   <section class="subscribe">
     <img alt="Subscribe background" class="subscribe__pic" src="./img/subscribe.png">
@@ -438,5 +408,4 @@
     </div>
   </footer>
 </body>
-
 </html>

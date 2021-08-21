@@ -1,0 +1,175 @@
+@import "mixins"
+@import "vars"
+
+.items
+  @extend .container
+  display: flex
+  margin-top: $default-margin !important
+  align-items: flex-start
+  justify-content: space-between
+
+  &__categories
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    flex-wrap: wrap
+    width: 250px
+
+  &__category
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    cursor: pointer
+
+
+  &__summary
+    text-transform: uppercase
+    width: 248px
+    display: flex
+    justify-content: space-between
+    font-weight: bold
+    font-size: $default-font-size
+    color: #6f6e6e
+    border-left: 5px solid $color-darker-pink
+    border-bottom: solid 1px #ebebeb
+    padding: 14px
+    margin-top: 14px
+
+  &__summary::after
+    display: block
+    font-family: "Font Awesome 5 Free", sans-serif
+    font-weight: 900
+    content: "\f0d7"
+    color: #6f6e6e
+
+  &__category[open] &__summary, &__category[open] &__summary:after, &__summary:hover, &__links:hover
+    color: $color-darker-pink
+
+  &__links
+    text-decoration: none
+    font-size: $default-font-size
+    line-height: 33px
+    color: #6f6e6e
+    padding-left: 12px
+
+  &__right
+    margin-left: 50px
+    display: flex
+    flex-direction: column
+    max-width: 850px
+
+  &__products
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+
+  &__settings
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__trending, &__size, &__price, &__sort
+    width: 261px
+    border: none
+    margin-bottom: 45px
+
+  &__input
+    border: solid 1px #ebebeb
+    background-color: #ffffff
+  &__label
+    margin-right: 23px
+
+  &__legend
+    text-transform: uppercase
+    font-weight: bold
+    margin-bottom: 25px
+
+  &__legend, &__label
+    font-size: $default-font-size
+    line-height: 20px
+    color: #6f6e6e
+
+  &__range
+    width: 261px
+    color: $color-darker-pink
+    cursor: pointer
+    margin-bottom: 24px
+
+  &__prices
+    display: flex
+    justify-content: space-between
+    font-size: 14px
+    color: #6f6e6e
+
+  &__sort
+    background-color: #f3f3f3
+    width: 100%
+    padding: 10px
+    display: flex
+
+    &_by, &_count
+      display: flex
+      margin-left: 10px
+
+    &_label, &_option, &_select
+      color: #6f6e6e
+      font-size: $default_font-size
+      border: solid 1px #ebebeb
+      background-color: #fff
+      padding: 5px
+
+//&_select
+  display: flex
+  justify-content: space-between
+  -moz-appearance: none
+  -webkit-appearance: none
+  appearance: none
+
+//&_select::after
+  display: block
+  font-family: "Font Awesome 5 Free"
+  font-weight: 900
+  content: "\f0d7"
+  color: #6f6e6e
+
+.pagination
+  display: flex
+  justify-content: space-between
+
+  &__buttons
+    border: solid 1px #ebebeb
+    background-color: #fff
+
+  &_slide
+    border: none
+    background: none
+    color: #aaa
+    margin: 15px
+
+    &:hover
+      color: $color-pink
+  &_a
+    text-decoration: none
+    color: #c4c4c4
+    margin-right: 16px
+
+  &_a:hover
+    color: $color-pink
+
+
+  &__all
+    border-radius: 3px
+    border: solid 1px $color-darker-pink
+    background-color: #fff
+    color: $color-darker-pink
+    width: 150px
+    height: 45px
+    font-size: 16px
+  &__all:hover
+    color: $color-white
+    background-color: $color-darker-pink
+.last
+  margin-right: 0 !important
