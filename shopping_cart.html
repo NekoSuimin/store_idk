@@ -196,7 +196,94 @@
       </div>
     </div>
   </section>
-  section.
+  <section class="checkout container">
+    <div class="checkout__items">
+      <div class="checkout__header">
+        <div class="checkout__desc">Product Details</div>
+        <div>unite price</div>
+        <div>Quantity</div>
+        <div>shipping</div>
+        <div>Subtotal</div>
+        <div>Action</div>
+      </div>
+      <div class="checkout__item">
+          <div class="checkout__desc">
+            <a href="product.html"><img src="img/woman_shirt.png" alt="woman shirt"></a>
+            <div class="checkout__text">
+              <h3><a href="product.html" class="link">Mango People T-shirt</a></h3>
+              <p>Color: <span class="checkout__text_gray">Red </span></p>
+              <p>Size: <span class="checkout__text_gray">Xll</span></p>
+            </div>
+          </div>
+          <div><span>$150</span></div>
+          <div><span><input type="text" name="quantity" id="quantity" class="checkout__input"  placeholder="1"></span></div>
+          <div><span>FREE</span></div>
+          <div><span>$300</span></div>
+          <div><span><button class="cart__delete"><i class="fas fa-times-circle"></i></button></span></div>
+        </div>
+      <div class="checkout__item">
+        <div class="checkout__desc">
+          <a href="product.html"><img src="img/woman_shirt.png" alt="woman shirt"></a>
+          <div class="checkout__text">
+            <h3><a href="product.html" class="link">Mango People T-shirt</a></h3>
+            <p>Color: <span class="checkout__text_gray">Red </span></p>
+            <p>Size: <span class="checkout__text_gray">Xll</span></p>
+          </div>
+        </div>
+        <div><span>$150</span></div>
+        <div><span><input type="text" name="quantity" id="quantity" class="checkout__input"  placeholder="1"></span></div>
+        <div><span>FREE</span></div>
+        <div><span>$300</span></div>
+        <div><span><button class="cart__delete"><i class="fas fa-times-circle"></i></button></span></div>
+      </div>
+      <div class="checkout__item">
+      <div class="checkout__desc">
+        <a href="product.html"><img src="img/woman_shirt.png" alt="woman shirt"></a>
+        <div class="checkout__text">
+          <h3><a href="product.html" class="link">Mango People T-shirt</a></h3>
+          <p>Color: <span class="checkout__text_gray">Red </span></p>
+          <p>Size: <span class="checkout__text_gray">Xll</span></p>
+        </div>
+      </div>
+      <div><span>$150</span></div>
+      <div><span><input type="text" name="quantity" id="quantity" class="checkout__input" placeholder="1"></span></div>
+      <div><span>FREE</span></div>
+      <div><span>$300</span></div>
+      <div><span><button class="cart__delete"><i class="fas fa-times-circle"></i></button></span></div>
+    </div>
+    </div>
+    <div class="checkout__continue">
+      <button class="checkout__button">cLEAR SHOPPING CART</button>
+      <button class="checkout__button">cONTINUE sHOPPING</button>
+    </div>
+  </section>
+
+  <section class="proceed container">
+    <fieldset class="proceed__fieldset">
+      <legend>
+        <h3>Shipping Adress</h3>
+      </legend>
+      <input type="text" name="country" id="country" class="proceed__input" placeholder="Bangladesh"><br>
+      <input type="text" name="state" id="state" class="proceed__input" placeholder="State"><br>
+      <input type="text" name="zip" id="zip" class="proceed__input" placeholder="Postcode/Zip"><br>
+      <button class="proceed__button">GET A QUOTE</button>
+    </fieldset>
+    <fieldset class="proceed__fieldset">
+      <legend>
+      <h3>coupon  discount</h3>
+    </legend>
+      <p>Enter your coupon code if you have one</p>
+      <input type="text" name="coupon" id="coupon" class="proceed__input" placeholder="Coupon"><br>
+      <button class="proceed__button">Apply coupon</button>
+    </fieldset>
+    <div class="proceed__total">
+      <div class="proceed__text">
+        <p>sub total 900$</p>
+        <h3 class="proceed__text_big">GRAND TOTAL <span class=" proceed__text_big proceed__text_pink">900$</span></h3>
+      </div>
+      <button class="proceed__done">proceed to checkout</button>
+    </div>
+  </section>
   <section class="subscribe">
     <img alt="Subscribe background" class="subscribe__pic" src="./img/subscribe.png">
     <div class="subscribe__container container">
