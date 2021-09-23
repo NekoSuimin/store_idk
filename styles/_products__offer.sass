@@ -10,6 +10,9 @@
     letter-spacing: 0.35px
     color: #9f9f9f
 
+  &__link
+      color: $color-black
+
 
   &__header h3
     font-size: 30px
@@ -29,6 +32,13 @@
     width: 261px
     height: 364px
     margin-bottom: 39px
+    -webkit-transition: all 0.25s
+    -moz-transition: all 0.25s
+    -o-transition: all 0.25s
+    transition: all 0.25s
+    &:hover
+      +scale(1.02)
+
 
 
   &__text
@@ -70,6 +80,12 @@
     filter: brightness(50%)
 
 
+  &__add
+    -webkit-transition: all 0.25s
+    -moz-transition: all 0.25s
+    -o-transition: all 0.25s
+    transition: all 0.25s
+
   &__add:hover
     box-shadow: 0 0 10px #fff
 
@@ -87,6 +103,12 @@
     line-height: 54px
     letter-spacing: 0.4px
     text-align: center
+    -webkit-transition: all 0.25s
+    -moz-transition: all 0.25s
+    -o-transition: all 0.25s
+    transition: all 0.25s
+    &:hover
+      +scale(1.05)
 
 
   &__add

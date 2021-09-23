@@ -23,3 +23,15 @@
   border-top: 1px solid #e8e8e8
   border-left: 1px solid #e8e8e8
 
+=transition($dur)
+  -webkit-transition: all $dur
+  -moz-transition: all $dur
+  -o-transition: all $dur
+  transition: all $dur
+
+=scale($scale)
+  -moz-transform: scale($scale)
+  -webkit-transform: scale($scale)
+  -o-transform: scale($scale)
+  -ms-transform: scale($scale)
+  transform: scale($scale)
