@@ -3,7 +3,7 @@
 
 .subscribe
   margin-top: $default-margin
-  height: 438px
+  min-height: 438px
   background-color: #e8e8e8
 
   &__pic
@@ -12,12 +12,13 @@
 
   &__container
     display: flex
+    flex-wrap: wrap
     justify-content: space-between
     position: relative
     top: 101px
 
   &__quote
-    width: 386px + 28px + 83px
+    max-width: 386px + 28px + 83px
     display: flex
     justify-content: space-between
     align-items: flex-start
@@ -108,7 +109,7 @@
   margin-top: $default-margin !important
   display: grid
   align-items: stretch
-  grid-template-columns: 5fr 2fr
+  grid-template-columns: 2fr 1fr
   grid-gap: 65px
 
   &__text
@@ -147,7 +148,7 @@
   margin-top: $default-margin
 
   &__flex
-    height: 79px
+    min-height: 79px
     display: flex
     justify-content: space-between
     align-items: center
