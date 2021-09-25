@@ -1118,10 +1118,10 @@
   margin-right: 0 !important;
 }
 
-.checkout {
+.cart-checkout {
   margin-top: 97px !important;
 }
-.checkout__header, .checkout__item {
+.cart-checkout__header, .cart-checkout__item {
   display: grid;
   grid-template-columns: 5fr repeat(5, 1fr);
   grid-gap: 60px;
@@ -1135,17 +1135,17 @@
   border-bottom: solid 1px #eaeaea;
   padding: 25px 0 25px 0;
 }
-.checkout__item {
+.cart-checkout__item {
   grid-auto-rows: minmax(115px, auto);
 }
-.checkout__item div > span {
+.cart-checkout__item div > span {
   color: #656565;
 }
-.checkout__desc {
+.cart-checkout__desc {
   display: flex;
   text-align: left;
 }
-.checkout__input {
+.cart-checkout__input {
   text-align: center;
   width: 54px;
   height: 30px;
@@ -1155,7 +1155,7 @@
   -o-transition: all 0.25s;
   transition: all 0.25s;
 }
-.checkout__input:focus {
+.cart-checkout__input:focus {
   border-color: #ef5b70;
   -moz-transform: scale(1.05);
   -webkit-transform: scale(1.05);
@@ -1163,33 +1163,33 @@
   -ms-transform: scale(1.05);
   transform: scale(1.05);
 }
-.checkout__desc img {
+.cart-checkout__desc img {
   width: 100px;
   height: 115px;
 }
-.checkout__text {
+.cart-checkout__text {
   padding: 15px;
   font-size: 13px;
   color: #575757;
 }
-.checkout__text a {
+.cart-checkout__text a {
   color: #222;
 }
-.checkout__text h3 {
+.cart-checkout__text h3 {
   margin-bottom: 20px;
 }
-.checkout__text p {
+.cart-checkout__text p {
   text-transform: none;
 }
-.checkout__text_gray {
+.cart-checkout__text_gray {
   color: #6f6e6e;
 }
-.checkout__continue {
+.cart-checkout__continue {
   margin-top: 45px;
   display: flex;
   justify-content: space-between;
 }
-.checkout__button, .proceed__button {
+.cart-checkout__button, .proceed__button {
   width: 235px;
   height: 50px;
   border: solid 1px #eaeaea;
@@ -1204,7 +1204,7 @@
   -o-transition: color 0.25s, background 0.25s;
   transition: color 0.25s, background 0.25s;
 }
-.checkout__button:hover, .proceed__button:hover {
+.cart-checkout__button:hover, .proceed__button:hover {
   color: #ffffff;
   border: none;
   background-color: #ef5b70;
