@@ -1059,6 +1059,7 @@
 .items__input {
   border: solid 1px #ebebeb;
   background-color: #ffffff;
+  cursor: pointer;
 }
 .items__label {
   margin-right: 23px;
