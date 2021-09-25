@@ -1342,7 +1342,7 @@
   border: none;
 }
 .checkout__fieldset > div {
-  margin: 32px 0;
+  margin-bottom: 32px;
 }
 .checkout__fieldset_separator {
   margin-bottom: 27px !important;
