@@ -1002,9 +1002,26 @@
   font-weight: 900;
   content: "";
   color: #6f6e6e;
+  transition: all 0.5s;
 }
 .items__category[open] .items__summary, .items__category[open] .items__summary:after, .items__summary:hover, .items__links:hover {
   color: #ef5b70;
+}
+.items__category[open] .items__summary:after {
+  transform: rotate(180deg);
+}
+.items__category[open] .items__summary ~ * {
+  animation: sweep 0.5s ease-in-out;
+}
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .items__links {
   text-decoration: none;
