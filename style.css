@@ -322,10 +322,13 @@
   margin-top: 97px;
   min-height: 438px;
   background-color: #e8e8e8;
+  display: flex;
+  justify-content: center;
 }
 .subscribe__pic {
   filter: opacity(50%);
   position: absolute;
+  background-size: cover;
 }
 .subscribe__container {
   display: flex;
