@@ -968,6 +968,10 @@
   align-items: flex-start;
   justify-content: space-between;
 }
+.items__checkboxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
 .items__categories {
   display: flex;
   align-items: center;
