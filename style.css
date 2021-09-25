@@ -1102,6 +1102,11 @@
   border: solid 1px #ebebeb;
   background-color: #fff;
   padding: 5px;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.items__sort_label:hover, .items__sort_label:focus, .items__sort_option:hover, .items__sort_option:focus, .items__sort_select:hover, .items__sort_select:focus {
+  border-color: #f16d7f;
 }
 
 .pagination {
