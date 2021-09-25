@@ -118,7 +118,7 @@
     width: 261px
     color: $color-darker-pink
     cursor: pointer
-    margin-bottom: 24px
+    padding-bottom: 12px
 
   &__prices
     display: flex
@@ -186,3 +186,83 @@
     background-color: $color-darker-pink
 .last
   margin-right: 0 !important
+
+input[type=range].items__range
+  width: 100%
+  margin: 4px 0
+  background-color: transparent
+  -webkit-appearance: none
+
+  &:focus
+    outline: none
+
+  &::-webkit-slider-runnable-track
+    background: #f16d7f
+    border: 0
+    border-radius: 25px
+    width: 100%
+    height: 6px
+    cursor: pointer
+
+  &::-webkit-slider-thumb
+    margin-top: -4px
+    width: 14px
+    height: 14px
+    background: #f16d7f
+    border: 0px solid rgba(0, 0, 0, 0)
+    border: 0
+    border-radius: 50px
+    cursor: pointer
+    -webkit-appearance: none
+
+  &:focus::-webkit-slider-runnable-track
+    background: #f16d7f
+
+  &::-moz-range-track
+    background: #f16d7f
+    border: 0
+    border-radius: 25px
+    width: 100%
+    height: 6px
+    cursor: pointer
+
+  &::-moz-range-thumb
+    width: 14px
+    height: 14px
+    background: #f16d7f
+    border: 0px solid rgba(0, 0, 0, 0)
+    border: 0
+    border-radius: 50px
+    cursor: pointer
+
+  &::-ms-track
+    background: transparent
+    border-color: transparent
+    border-width: 4px 0
+    color: transparent
+    width: 100%
+    height: 6px
+    cursor: pointer
+
+  &::-ms-fill-lower, &::-ms-fill-upper
+    background: #f16d7f
+    border: 0
+    border-radius: 50px
+
+  &::-ms-thumb
+    width: 14px
+    height: 14px
+    background: #f16d7f
+    border: 0px solid rgba(0, 0, 0, 0)
+    border: 0
+    border-radius: 50px
+    cursor: pointer
+    margin-top: 0px
+  &:focus
+    &::-ms-fill-lower, &::-ms-fill-upper
+      background: #f16d7f
+
+@supports (-ms-ime-align: auto)
+
+  input[type=range].items__range
+    margin: 0
