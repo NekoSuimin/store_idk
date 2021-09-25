@@ -3,28 +3,38 @@
 
 .subscribe
   margin-top: $default-margin
-  min-height: 438px
+  height: 438px
   background-color: #e8e8e8
   display: flex
   justify-content: center
+  background-image: url("img/subscribe.png")
+  background-repeat: no-repeat
+  background-position: center
 
-  &__pic
-    filter: opacity(50%)
-    position: absolute
-    background-size: cover
+  &__filter
+    background: none
+    backdrop-filter: blur(5px)
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: center
 
   &__container
+    width: 100%
     display: flex
     flex-wrap: wrap
     justify-content: space-between
-    position: relative
-    top: 101px
+    align-items: center
+
+
+
 
   &__quote
     max-width: 386px + 28px + 83px
     display: flex
     justify-content: space-between
     align-items: flex-start
+
 
   &__desc
     margin-left: 28px
@@ -72,6 +82,7 @@
         letter-spacing: 0.35px
         color: $color-black
     &__form
+      margin-top: 35px
       display: flex
 
     &__input

@@ -199,30 +199,74 @@
 <section class="checkout container">
   <div class="checkout__step">
     <h3 class="checkout__h3">01.   Shipping Adress</h3>
-    <div class="checkout__register">
-      <fieldset>
-        <legend class="checkout__text">
-          Check as a guest or register
-        </legend>
-        <p class="checkout__text checkout__text_gray">Register with us for future convenience</p>
-        <input type="radio" name="guest" id="guest" class="checkout__radio">
-        <label for="guest" class="checkout__label">checkout as guest</label>
-        <input type="radio" name="register" id="register" checked class="checkout__radio">
-        <label for="register" class="checkout__label">register</label>
-        <p class="checkout__text">register and save time!</p>
-        <p class="checkout__text checkout__text_gray">Register with us for future convenience</p>
-        <p class="checkout__text checkout__text_gray"><i class="fas fa-angle-double-right"></i>Fast and easy checkout</p>
-        <p class="checkout__text checkout__text_gray"><i class="fas fa-angle-double-right"></i>Easy access to your order history and status</p>
-        <button class="checkout__button">Continue</button>
-      </fieldset>
+    <div class="checkout__flex">
+      <div class="checkout__register">
+        <form>
+          <fieldset class="checkout__fieldset">
+            <div>
+              <legend class="checkout__text">
+                Check as a guest or register
+              </legend>
+              <p class="checkout__text checkout__text_gray">Register with us for future convenience</p>
+            </div>
+            <div>
+              <label for="guest" class="checkout__label">
+                <input type="radio" name="register" id="guest" value="guest" class="checkout__radio">
+                <span class="radio">checkout as guest</span>
+              </label>
+              <label for="register" class="checkout__label">
+                <input type="radio" name="register" id="register" value="register" checked class="checkout__radio">
+                <span class="radio">register</span>
+              </label>
+            </div>
+            <div>
+              <p class="checkout__text">register and save time!</p>
+              <p class="checkout__text checkout__text_gray">Register with us for future convenience</p>
+            </div>
+            <div>
+              <p class="checkout__text checkout__text_gray"><i class="fas fa-angle-double-right"></i> Fast and easy checkout</p>
+              <p class="checkout__text checkout__text_gray"><i class="fas fa-angle-double-right"></i> Easy access to your order history and status</p>
+            </div>
+            <button class="checkout__button checkout__text">Continue</button>
+          </fieldset>
+        </form>
+      </div>
+      <div class="checkout__login">
+        <form>
+          <fieldset class="checkout__fieldset ">
+            <div class="checkout__fieldset_separator">
+              <legend class="checkout__text">
+                Already registed?
+              </legend>
+              <p class="checkout__text checkout__text_gray">Please-log-in-below </p>
+            </div>
+            <div>
+              <label for="email" class="checkout__label">
+                EMAIL ADDRESS <span class="checkout__text_required">*</span>
+              </label>
+              <input type="email" name="email" id="email" class="checkout__input">
+              <label for="pass" class="checkout__label">
+                PASSWORD <span class="checkout__text_required">*</span>
+              </label>
+              <input type="password" name="pass" id="pass" class="checkout__input">
+              <p class="checkout__text_required">* Required Fileds</p>
+            </div>
+
+            <div>
+              <input type="submit" name="login" value="Log In" class="checkout__button checkout__text" >
+              <a href="#" class="checkout__link link">Forgot Password ?</a>
+            </div>
+          </fieldset>
+        </form>
+
+      </div>
     </div>
-    <div class="checkout__login"></div>
   </div>
-  <div class="checkout__step"></div>
-  <div class="checkout__step"></div>
-  <div class="checkout__step"></div>
-  <div class="checkout__step"></div>
-  <div class="checkout__step"></div>
+  <div class="checkout__step"><h3 class="checkout__h3">02.   BILLING INFORMATION</h3></div>
+  <div class="checkout__step"><h3 class="checkout__h3">03.   SHIPPING INFORMATION</h3></div>
+  <div class="checkout__step"><h3 class="checkout__h3">04.   SHIPPING METHOD</h3></div>
+  <div class="checkout__step"><h3 class="checkout__h3">05.   PAYMENT METHOD</h3></div>
+  <div class="checkout__step"><h3 class="checkout__h3">06.   ORDER REVIEW</h3></div>
 </section>
 <section class="subscribe">
   <img alt="Subscribe background" class="subscribe__pic" src="./img/subscribe.png">
